@@ -23,7 +23,7 @@ menu_button=driver.find_element(By.CLASS_NAME,"dropdown-toggle")
 # logout_button=driver.find_element(By.XPATH,"//a[normalize-space()='Logout']")
 try:
     assert menu_button.is_displayed(), "User not logged in"
-    print("User is logged in")
+    print("User logged in successfully")
 except:
     print("User not logged in")
 driver.close()
